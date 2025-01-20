@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom scrollbar style */
+::-webkit-scrollbar {
+    width: 6px; /* Adjust scrollbar width */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar color */
+    border-radius: 10px; /* Rounded edges */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darken scrollbar on hover */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Track color */
+    border-radius: 10px; /* Rounded edges */
+  }
+  body {
+    @apply bg-slate-100;
+  }
