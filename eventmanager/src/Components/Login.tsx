@@ -48,9 +48,9 @@ export const Login = () => {
   };
 
   return (
-    <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}>
+    <div className="h-screen bg-cover bg-center " style={{ backgroundImage: `url(${image})` }}>
       <div className="flex justify-center items-center h-full bg-black bg-opacity-50">
-        <div className="p-8 bg-white rounded-lg shadow-lg w-full sm:w-96">
+        <div className="p-8 bg-white m-5 rounded-lg shadow-lg w-full sm:w-96">
           <h1 className="text-center text-3xl font-bold mb-4">Login</h1>
           
           {error && (

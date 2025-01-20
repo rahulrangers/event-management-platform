@@ -54,9 +54,9 @@ export const Signup = () => {
   if(userinfo) navigate("/eventdashboard");
   if(loading) return <Loading/>
   return (
-    <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}>
+    <div className="h-screen bg-cover bg-center " style={{ backgroundImage: `url(${image})` }}>
       <div className="flex justify-center items-center h-full bg-black bg-opacity-50">
-        <div className="p-8 bg-white rounded-lg shadow-lg w-full sm:w-96">
+        <div className="p-8 bg-white rounded-lg shadow-lg m-5 w-full sm:w-96">
           <h1 className="text-center text-3xl font-bold mb-4 text-blue-500">Sign Up</h1>
           
           {error && (
