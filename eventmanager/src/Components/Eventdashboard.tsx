@@ -40,9 +40,11 @@ export const EventDashboard = () => {
             : event
         )
       );
-      setUserinfo((user:User) => ({
-        ...user,myevents:[...user.myevents,data.eventId]
-      }))
+      setUserinfo((user: User) => ({
+        ...user,
+        myevents: [...(user.myevents || []), data.eventId]
+      }));
+      
     };
 
     socket.on("updateEvent", handleUpdateEvent);
