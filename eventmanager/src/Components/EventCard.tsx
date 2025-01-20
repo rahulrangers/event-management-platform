@@ -99,11 +99,11 @@ const EventCard = ({
                 </div>
               )
             ) : (
-              <div className="flex items-center bg-blue-100 border border-blue-300 rounded-lg px-3 py-2 shadow-md">Completed</div>
+              <div className="flex items-center bg-blue-100 border border-blue-300 rounded-lg px-3 py-1 shadow-md">Completed</div>
             )}
 
         
-          <div className="flex items-center bg-blue-100 border border-blue-300 rounded-lg px-3 py-2 shadow-md">
+          <div className="flex items-center bg-blue-100 border border-blue-300 rounded-lg px-3  shadow-md">
             <span className="text-2xl font-bold text-blue-600">{attendees}</span>
             <span className="ml-1 text-sm text-gray-600">Attendees</span>
           </div>
