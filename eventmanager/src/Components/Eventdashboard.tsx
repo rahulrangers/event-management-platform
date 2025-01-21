@@ -40,10 +40,12 @@ export const EventDashboard = () => {
             : event
         )
       );
-      setUserinfo((user: User) => ({
-        ...user,
-        myevents: [...(user.myevents || []), data.eventId]
-      }));
+      if (userinfo) {
+        setUserinfo((user: User) => ({
+          ...user,
+          myevents: [...(user?.myevents || []), data.eventId]
+        }));
+      }
       
     };
 
